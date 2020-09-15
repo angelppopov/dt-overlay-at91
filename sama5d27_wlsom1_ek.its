@@ -91,7 +91,7 @@
 		};
 		
 		fdt_pda35 {
-			description = "Device Tree blob i2c PCAP Winstar 3.5" display overlay";
+			description = "Device Tree blob i2c PCAP Winstar 3.5 display overlay";
 			data = /incbin/("./sama5d27_wlsom1_ek/sama5d27_wlsom1_ek_pda35.dtbo");
 			type = "flat_dt";
 			arch = "arm";
@@ -250,7 +250,7 @@
 		};
 		
 		pda35 {
-			description = "FDT overlay blob for i2c PCAP Winstar 3.5" screen";
+			description = "FDT overlay blob for i2c PCAP Winstar 3.5 screen";
 			fdt = "fdt_pda35";
 		};
 
