@@ -89,6 +89,21 @@
 				algo = "sha1";
 			};
 		};
+		
+		fdt_pda35 {
+			description = "Device Tree blob i2c PCAP Winstar 3.5" display overlay";
+			data = /incbin/("./sama5d27_wlsom1_ek/sama5d27_wlsom1_ek_pda35.dtbo");
+			type = "flat_dt";
+			arch = "arm";
+			compression = "none";
+			load = <0x23130000>;
+			hash@1 {
+				algo = "crc32";
+			};
+			hash@2 {
+				algo = "sha1";
+			};
+		};
 
 		fdt_pda4 {
 			description = "Device Tree blob pda4300 overlay";
@@ -232,6 +247,11 @@
 		mt9v022 {
 			description = "FDT overlay blob for mt9v022 sensor";
 			fdt = "fdt_mt9v022";
+		};
+		
+		pda35 {
+			description = "FDT overlay blob for i2c PCAP Winstar 3.5" screen";
+			fdt = "fdt_pda35";
 		};
 
 		pda4 {
