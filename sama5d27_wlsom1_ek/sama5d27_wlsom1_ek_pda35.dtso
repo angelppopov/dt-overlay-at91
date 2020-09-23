@@ -25,6 +25,8 @@
 		pinctrl-0 = <&pinctrl_edt_irq>;
 		interrupt-parent = <&pioA>;
 		interrupts = <PIN_PB0 0x0>;
+		touchscreen-size-x = <320>;	
+		touchscreen-size-y = <240>;
 	};
   
 };
